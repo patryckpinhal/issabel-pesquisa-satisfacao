@@ -2,8 +2,8 @@
 <?php
 
     $servername = "localhost";
-    $username = "user";
-    $password = "senha";
+    $username = "mudaruser";
+    $password = "mudarsenha";
     $dbname = "pesquisa_satisfacao";
 
     $conn = mysqli_connect($servername, $username, $password, $dbname);
