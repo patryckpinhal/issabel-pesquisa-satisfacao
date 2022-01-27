@@ -99,7 +99,7 @@ echo "; Inicio configuração pesquisa de satisfação" >> /etc/asterisk/extensi
 echo "" >> /etc/asterisk/extensions_custom.conf
 echo "[from-ura-pesquisa]" >> /etc/asterisk/extensions_custom.conf
 echo "exten => s,1,Noop(Pesquisa de satisfação)" >> /etc/asterisk/extensions_custom.conf
-echo "same => n,AGI(script.php, "'${STRFTIME(${EPOCH},,%Y-%m-%d %H:%M:%S)}'", https://mudardominio/index.php?menu=monitoring&action=download&id="'${UNIQUEID}&namefile=${CDR(recordingfile)}&rawmode=yes, ${QUEUENUM}, ${CALLERID(number)}, ${CONNECTEDLINE(name)}, ${IVR_DIGIT_PRESSED}) '"" >> /etc/asterisk/extensions_custom.conf
+echo "same => n,AGI(pesquisa.php, "'${STRFTIME(${EPOCH},,%Y-%m-%d %H:%M:%S)}'", https://mudardominio/index.php?menu=monitoring&action=download&id="'${UNIQUEID}&namefile=${CDR(recordingfile)}&rawmode=yes, ${QUEUENUM}, ${CALLERID(number)}, ${CONNECTEDLINE(name)}, ${IVR_DIGIT_PRESSED}) '"" >> /etc/asterisk/extensions_custom.conf
 echo "same => n,Playback(custom/audio-pesquisa-2)" >> /etc/asterisk/extensions_custom.conf
 echo "same => n,Hangup()" >> /etc/asterisk/extensions_custom.conf
 echo "" >> /etc/asterisk/extensions_custom.conf
