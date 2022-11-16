@@ -7,5 +7,7 @@ Para inicio das instalações, apenas siga as linhas de comando:
 
 
 $ wget -c https://raw.githubusercontent.com/patryckpinhal/issabel-pesquisa-satisfacao/main/install-pesquisa-satisfacao.sh
+
 $ chmod +x install-pesquisa-satisfacao.sh
+
 $ ./install-pesquisa-satisfacao.sh
